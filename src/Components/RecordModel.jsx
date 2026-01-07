@@ -17,6 +17,7 @@ export default function RecordModel({ closeModel, currentRecord }) {
   useEffect(() => {
     console.log(currentRecord);
     if (currentRecord) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setFormData({
         name: currentRecord.name,
         email: currentRecord.email,
